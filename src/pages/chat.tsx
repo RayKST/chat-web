@@ -32,7 +32,7 @@ export function Chats() {
             <Link
               className="flex items-center justify-between rounded-lg border p-3 hover:bg-accent/50"
               key={chats.id}
-              to={`/chats/${chats.id}`}
+              to={`/chats/${chats.id}/message`}
             >
               <div className="flex flex-1 flex-col gap-1">
                 <h3 className="font-medium">{chats.name}</h3>
