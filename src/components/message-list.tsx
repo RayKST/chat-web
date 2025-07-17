@@ -16,13 +16,14 @@ export function MessageList (props: MessageListProps) {
               Mensagens
             </h2>
           </div>
-
-          {data?.map(message => {
-            return (
-                <MessageItem 
-                key={message.id}
-                message={message}/>
-            )})}
+          <div className="flex flex-col space-y-4">
+            {data?.map(message => {
+              return (
+                  <MessageItem 
+                  key={message.id}
+                  message={message}/>
+              )})}
+          </div>
         </div>
     )
 }
